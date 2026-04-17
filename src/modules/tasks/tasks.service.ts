@@ -44,7 +44,7 @@ export class TasksService {
     return task;
   }
 
-  // ✏️ UPDATE TASK
+  // UPDATE TASK
   async update(id: number, updateTaskDto: UpdateTaskDto) {
     const task = await this.findOne(id);
 
@@ -58,7 +58,7 @@ export class TasksService {
     return await this.taskRepo.save(task);
   }
 
-  // ❌ DELETE TASK
+  //  DELETE TASK
   async remove(id: number) {
     const task = await this.findOne(id);
 
@@ -67,7 +67,7 @@ export class TasksService {
     return { message: `Task ${id} deleted successfully` };
   }
 
-  // 🔍 QUERY BUILDER (JOIN PROJECT)
+  //  QUERY BUILDER (JOIN PROJECT)
   async findWithProjectQB(id: number) {
     return await this.taskRepo
       .createQueryBuilder('task')

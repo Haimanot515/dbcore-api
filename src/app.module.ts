@@ -10,12 +10,12 @@ import { databaseConfig } from './config/database.config';
 
 @Module({
   imports: [
-    // ✅ Global config system
+    //  Global config system
     ConfigModule.forRoot({
       isGlobal: true,
     }),
 
-    // ✅ Inject ConfigService into TypeORM
+    //  Inject ConfigService into TypeORM
     TypeOrmModule.forRootAsync({
       inject: [ConfigService],
       useFactory: databaseConfig,
