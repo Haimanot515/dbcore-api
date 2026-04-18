@@ -119,7 +119,7 @@ dbcore-api/
 │
 │   ├── config/                     #  Configuration layer
 │   │   ├── database.config.ts      # DB connection settings
-│   │   └── orm.config.ts           # (optional) TypeORM config
+│   │           
 │   │
 │   ├── modules/
 │   │   ├── users/
