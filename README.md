@@ -18,7 +18,7 @@ It demonstrates real-world backend architecture including entities, relations, r
 
 ##  Core Concepts
 
-### 🗄 SQL vs NoSQL
+### SQL vs NoSQL
 This project uses **SQL (PostgreSQL)** for structured relational data instead of NoSQL document storage.
 
 ---
@@ -108,7 +108,43 @@ This project demonstrates:
 - Applying TypeORM in real-world apps
 
 ---
-
+dbcore-api/
+│
+├── src/
+│   ├── main.ts
+│   ├── app.module.ts
+│   ├── app.controller.ts
+│   ├── app.service.ts
+│
+│   ├── config/                     #  Configuration layer
+│   │   ├── database.config.ts      # DB connection settings
+│   │   └── orm.config.ts           # (optional) TypeORM config
+│   │
+│   ├── modules/
+│   │   ├── users/
+│   │   │   ├── dto/
+│   │   │   ├── entities/
+│   │   │   ├── users.controller.ts
+│   │   │   ├── users.service.ts
+│   │   │   └── users.module.ts
+│   │   │
+│   │   ├── projects/
+│   │   │   ├── dto/
+│   │   │   ├── entities/
+│   │   │   ├── projects.controller.ts
+│   │   │   ├── projects.service.ts
+│   │   │   └── projects.module.ts
+│   │   │
+│   │   ├── tasks/
+│   │   │   ├── dto/
+│   │   │   ├── entities/
+│   │   │   ├── tasks.controller.ts
+│   │   │   ├── tasks.service.ts
+│   │   │   └── tasks.module.ts
+│
+├── .env                           #  Environment variables
+├── package.json
+└── README.md
 ##  Future Improvements
 
 - JWT Authentication
