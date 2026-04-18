@@ -108,6 +108,7 @@ This project demonstrates:
 - Applying TypeORM in real-world apps
 
 ---
+```text
 dbcore-api/
 │
 ├── src/
